@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>  
+</head>
+
+<body>
+  <!-- main container -->
+  <div class="container">
+    <!-- inputs -->
+    <div class="input-flex">
+      <div class="inputs">
+        <!-- day -->
+        <span class="day">Day</span>
+        <input type="number" id="day" placeholder="DD">
+        <!-- error displayed when an invalid input is made -->
+        <small class="day-input_error"></small>
+      </div>
+
+      <div class="inputs">
+        <!-- month -->
+        <span class="month">Month</span>
+        <input type="number" id="month" placeholder="MM">
+        <!-- error displayed when an invalid input is made -->
+        <small class="month-input_error"></small>
+      </div>
+
+      <div class="inputs">
+        <!-- year -->
+        <span class="year">Year</span>
+        <input type="number" id="year" placeholder="YYYYY">
+        <!-- error displayed when an invalid input is made -->
+        <small class="year-input_error"></small>
+      </div>
+    </div>
+
+    <!-- submit button -->
+    <button class="submit">
+      <img src="/assets/images/icon-arrow.svg" alt="submit">
+    </button>
+
+    <div class="display">
+      <!-- outputs -->
+      <h1><span class="years-output">--</span>years</h1>
+      <h1><span class="months-output">--</span>months</h1>
+      <h1><span class="days-output">--</span>days</h1>
+    </div>
+  </div>
+    
+  <!-- attribution -->
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Delcreate <span>❤</span></a>.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* fonts */
+@font-face {
+    font-family: poppins-bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-bolditalic;
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-extrabolditalic;
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: poppins-italic;
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+
+/* colors */
+
+:root{
+    /* Primary */
+
+    --purple: #854dff;
+    --ight-red: #ff5757;
+
+    /* Neutral */
+
+    --white: #ffffff;
+    --off-white: #f0f0f0;
+    --light-grey: #dbdbdb;
+    --smokey-grey: #716f6f;
+    --off-black: #141414;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body{
+    font-family: poppins-regular;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--off-white);
+}
+
+.container {
+    background-color: var(--white);
+    width: 30rem;
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 1rem 1rem 5rem 1rem;
+    position: relative;
+}
+
+/* inputs */
+input[type='number'] {
+    width: 7rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 2px solid var(--off-white);
+}
+input[type='number']:focus{
+    border: 2px solid var(--purple);
+}
+.inputs{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-flex{
+    display: flex;
+    border-bottom: 2px solid var(--off-white);
+    margin: 0 0 1rem 0;
+    padding: 0 0 .5rem;
+}
+.day, .month, .year{
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+    font-size: .6rem;
+    color: var(--smokey-grey);
+    font-family: poppins-bold;
+    letter-spacing: 2px;
+}
+
+/* errors */
+small{
+    color: var(--ight-red);
+    font-size: .6rem;
+    font-family: poppins-bold;
+    margin: .3rem 0 0 0;
+    text-align: center;
+}
+
+/* output */
+.display{
+    margin: .5rem 0 .5rem 0;
+}
+h1{
+    font-size: 2.4rem;
+    font-family: poppins-extrabolditalic;
+}
+h1 span{
+    color: var(--purple);
+    margin: 0 1rem 0 0;
+}
+
+/* button */
+button {
+    border: none;
+    background-color: var(--purple);
+    padding: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--off-black);
+}
+
+/* attribution */
+.attribution {
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution a { 
+    text-decoration: none;
+    color: #3e52a3;
+}
+.attribution p span{
+    color: #ff5757;
+}
+
+/* media queries */
+@media  screen and (max-width: 375px){
+    .container {
+        width: 20rem;
+        max-width: 80%;
+        padding: .5rem;
+    }
+
+    button {
+        right: 8rem;
+        top: 4.5rem;
+        padding: .3rem;
+    }
+
+    input[type=number]{
+        width: 4.5rem;
+        padding: .5rem;
+    }
+    .day, .month, .year{
+        margin-bottom: .2rem;
+        font-size: .5rem;
+    }
+    
+}
